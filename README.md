@@ -1,7 +1,7 @@
 # Real Estate Ledger using Blockchain 
 
 ## Background
-There are thousands of real estate transactions that happen every day across India. Most of them involve transfer of land ownership. However, due to poor oversight and missing or falsified link documents, many of the land owners face litigations due to no fault of their own. It's suprising to see how easily land papers are modified to suit the a particular individual and allow for illegal occupation. 
+There are thousands of real estate transactions that happen every day across India. Most of them involve transfer of land ownership. However, due to poor oversight and missing or falsified link documents, many of the land owners face litigations due to no fault of their own. It's surprising to see how easily land papers are modified to suit the a particular individual and allow for illegal occupation. 
 
 ## Solution
 The solution to this problem requires a system that records every transantion and ensures integrity without manual intervention. As a result, I've tried to solve this problem by using Blockchain. The agents input their data via the UI and submit the transaction. Once the transaction is submitted, any alteration to the property details will result in a new hash being created, thereby enabling us to identify any malicious intent. 

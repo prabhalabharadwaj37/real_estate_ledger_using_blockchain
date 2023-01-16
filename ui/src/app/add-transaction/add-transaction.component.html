@@ -1,0 +1,109 @@
+
+<div style="text-align: center; margin-bottom: 30px;">
+        <h3>
+            <b>Property Transaction Details</b><br>
+            <small class="text-muted" style="color: red; font-style: italic;">All fields are mandatory</small>
+        </h3>
+      </div>
+      <form>
+          <div class="container">
+              <div class="row">
+                  <div class="form-group col-sm">
+                      <label for="buyer_name">Buyer Name</label>
+                      <input type="text" class="form-control" id="buyer_name" aria-describedby="buyer_name_help" placeholder="Buyer Name" [(ngModel)]="transaction.buyer_name" [value] = "transaction.buyer_name" name="buyer_name">
+                  </div>
+                  <div class="form-group col-sm">
+                      <label for="seller_name">Seller Name</label>
+                      <input type="text" class="form-control" id="seller_name" aria-describedby="seller_name_help" placeholder="Seller Name" [(ngModel)]="transaction.seller_name" [value] = "transaction.seller_name" name="seller_name">
+                    </div>
+              </div>
+              <div class="row" style="margin-top:20px">
+                    <div class="form-group col-sm">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" id="address" aria-describedby="address_help" placeholder="Property Address" [(ngModel)]="transaction.address" [value] = "transaction.address" name="address">
+                        <small id="address_help" class="form-text text-muted">Complete address of the property that is being transacted</small>
+                    </div>
+              </div>
+              <div class="row" style="margin-top:20px">
+                  <div class="form-group col-sm">
+                      <label for="area">Area</label>
+                      <input type="number" class="form-control" id="area" aria-describedby="area_help" placeholder="Area" [(ngModel)]="transaction.area" [value] = "transaction.area" name="area">
+                      <small id="area_help" class="form-text text-muted">Total Area of the property in SFT</small>
+                  </div>
+                  <div class="form-group col-sm">
+                      <label for="price_per_sft">Price per SFT</label>
+                      <input type="number" class="form-control" id="price_per_sft" aria-describedby="psft_help" placeholder="Price per SFT" [(ngModel)]="transaction.price_per_sft" [value] = "transaction.price_per_sft" name="price_per_sft">
+                      <small id="psft_help" class="form-text text-muted">Price per square-foot in INR</small>
+                    </div>
+                    <div class="form-group col-sm">
+                        <label for="gst">GST</label>
+                        <input type="number" class="form-control" id="gst" aria-describedby="gst_help" placeholder="GST" [(ngModel)]="transaction.gst" [value] = "transaction.gst" name="gst">
+                        <small id="gst_help" class="form-text text-muted">GST in %</small>
+                    </div>
+                    <div class="form-group col-sm">
+                      <label for="price">Total Price</label>
+                      <input type="number" class="form-control" id="price" aria-describedby="price_help" placeholder="Total Price" [(ngModel)]="transaction.total_price" [value] = "transaction.total_price" name="total_price">
+                      <small id="price_help" class="form-text text-muted">Total price in INR</small>
+                  </div>
+                  <div class="form-group col-sm">
+                      <label for="registration_num">Registration Number</label>
+                      <input type="text" class="form-control" id="registration_num" aria-describedby="registration_num_help" placeholder="Registration Number" [(ngModel)]="transaction.registration_number" [value] = "transaction.registration_number" name="registration_number">
+                  </div>
+              </div>
+              <div class="row" style="margin-top:20px">
+                  <div class="form-group col-sm">
+                      <label for="litigations">Describe any litigations on the property</label>
+                      <textarea class="form-control" id="litigations" aria-describedby="litigations_help" placeholder="Enter all the current/past litigation details including any associated legal numbers of the property. Leave blank if not applicable." rows="3" [(ngModel)]="transaction.litigations" [value] = "transaction.litigations" name="litigations"></textarea>
+                  </div>
+              </div>
+              <div class="row" style="margin-top:20px">
+                  <div class="form-group col-sm">
+                      <label for="facing">Entrance Facing</label>
+                      <input type="text" class="form-control" id="facing" aria-describedby="facing_help" placeholder="Entrance Facing" [(ngModel)]="transaction.entrance_facing" [value] = "transaction.entrance_facing" name="entrance_facing">
+                      <small id="facing_help" class="form-text text-muted">Facing direction of the main entrance</small>
+                    </div>
+                    <div class="form-group col-sm">
+                        <label for="survey_num">Survey Number</label>
+                        <input type="text" class="form-control" id="survey_num" aria-describedby="survey_num_help" placeholder="Survey Number" [(ngModel)]="transaction.survey_number" [value] = "transaction.survey_number" name="survey_number">
+                    </div>
+                    <div class="form-group col-sm">
+                      <label for="north_survey_number">North SN</label>
+                      <input type="text" class="form-control" id="north_survey_number" placeholder="North Survey Number" [(ngModel)]="transaction.north_survey_number" [value] = "transaction.north_survey_number" name="north_survey_number">
+                  </div>
+                  <div class="form-group col-sm">
+                      <label for="south_survey_number">South SN</label>
+                      <input type="text" class="form-control" id="south_survey_number" placeholder="South Survey Number" [(ngModel)]="transaction.south_survey_number" [value] = "transaction.south_survey_number" name="south_survey_number">
+                  </div>
+                  <div class="form-group col-sm">
+                      <label for="east_survey_number">East SN</label>
+                      <input type="text" class="form-control" id="east_survey_number" placeholder="East Survey Number" [(ngModel)]="transaction.east_survey_number" [value] = "transaction.east_survey_number" name="east_survey_number">
+                  </div>
+                  <div class="form-group col-sm">
+                      <label for="west_survey_number">West SN</label>
+                      <input type="text" class="form-control" id="west_survey_number" placeholder="West Survey Number" [(ngModel)]="transaction.west_survey_number" [value] = "transaction.west_survey_number" name="west_survey_number">
+                  </div>
+              </div>
+              <div class="row" style="margin-top:20px">
+                  <div class="form-group col-sm">
+                      <label for="date_of_transaction">Transaction Date</label>
+                      <input type="date" class="form-control" id="date_of_transaction" aria-describedby="dot_help" placeholder="Date of Transaction" [(ngModel)]="transaction.transaction_date" [value] = "transaction.transaction_date" name="transaction_date">
+                  </div>
+                  <div class="form-group col-sm">
+                      <label for="verified_by">Verified By</label>
+                      <input type="text" class="form-control" id="verified_by" aria-describedby="verified_by_help" placeholder="Verified By" [(ngModel)]="transaction.verified_by" [value] = "transaction.verified_by" name="verified_by">
+                      <small id="verified_by_help" class="form-text text-muted">Name of the official verifying this transaction</small>
+                  </div>
+              </div>
+              <div style='margin-top:20px'>
+                <button type="submit" class="btn btn-success" (click)="submitTransaction()">Submit Transaction</button>
+                <button style="margin-left: 20px;" type="reset" class="btn btn-danger" (click)="resetTransaction()">Reset Form</button>
+                <button style="margin-left: 20px;" type="button" class="btn btn-primary" (click)="updateTransaction()">Update Transaction</button>
+              </div>
+              <div style='margin-top:20px'>
+                <h3 *ngIf="!formCompleted" style="color: red;">Please fill-in all the required fields before submitting.</h3>
+              </div>
+              <div style='margin-top:20px'>
+                  <h3 *ngIf="apiResponse != ''" style="color: blue;">{{apiResponse}}</h3>
+              </div>
+          </div>
+        </form>

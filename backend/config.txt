@@ -1,0 +1,10 @@
+[db]
+db_hostname=localhost
+db_name=postgres
+db_username=
+db_pass=
+
+[peers]
+peer1_hostname=http://localhost:5001/
+peer2_hostname=http://localhost:5002/
+peer3_hostname=http://localhost:5003/

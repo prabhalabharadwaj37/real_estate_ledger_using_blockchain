@@ -12,14 +12,14 @@ The solution to this problem requires a system that records every transantion an
 ## Database: Postgres
 
 #Running the application
-##Create DB and tables
+## Create DB and tables
 - Create a postgres DB with 4 tables using backend/dbCreate.sql (Change name if needed in the code. Peer ledgers should be running on different DB instances.)
     - golden_transaction_ledger
     - peer1_ledger
     - peer2_ledger
     - peer3_ledger
 
-##Start the servers
+## Start the servers
 - cd ui/
 - ng serve
 - cd ..
@@ -28,7 +28,7 @@ The solution to this problem requires a system that records every transantion an
 - python3 peer2.py
 - python3 peer3.py
 
-##Navigating
+## Navigating
 - By default the UI loads the add_transaction route
 - Enter all the details and submit
     - This should make an entry in all the ledgers with the transaction_id and hashes created. If any new details need to be added, changes must be done to the DB, UI, API layers. 

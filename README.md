@@ -7,9 +7,9 @@ There are thousands of real estate transactions that happen every day across Ind
 The solution to this problem requires a system that records every transantion and ensures integrity without manual intervention. As a result, I've tried to solve this problem by using Blockchain. The agents input their data via the UI and submit the transaction. Once the transaction is submitted, any alteration to the property details will result in a new hash being created, thereby enabling us to identify any malicious intent. 
 
 ## Technical Aspects
-## UI: Angular 11.2
-## Backend: Python 3.6
-## Database: Postgres
+- UI: Angular 11.2
+- Backend: Python 3.6
+- Database: Postgres
 
 # Running the application
 ## Create DB and tables

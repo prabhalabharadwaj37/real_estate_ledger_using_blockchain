@@ -11,7 +11,7 @@ The solution to this problem requires a system that records every transantion an
 ## Backend: Python 3.6
 ## Database: Postgres
 
-#Running the application
+# Running the application
 ## Create DB and tables
 - Create a postgres DB with 4 tables using backend/dbCreate.sql (Change name if needed in the code. Peer ledgers should be running on different DB instances.)
     - golden_transaction_ledger

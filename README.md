@@ -1,4 +1,4 @@
-# Real Estate Ledger using Blockchain 
+# Real Estate Linkage Integrity Manager (RELIM)
 
 ## Background
 There are thousands of real estate transactions that happen every day across India. Most of them involve transfer of land ownership. However, due to poor oversight and missing or falsified link documents, many of the land owners face litigations due to no fault of their own. It's surprising to see how easily land papers are modified to suit the a particular individual and allow for illegal occupation. 
